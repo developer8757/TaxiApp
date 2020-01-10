@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="@dimen/dp_6"
+>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="wrap_content"
+                                             android:layout_height="wrap_content"
+
+                                             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+            android:id="@+id/tvPickUpRequestTitle"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+
+            android:text="@string/pickup_request"
+            android:textSize="@dimen/sp_22"
+            android:textColor="@color/md_black_1000"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_20"
+    />
+
+    <View
+        android:id="@+id/div"
+        android:layout_height="@dimen/dp_1"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPickUpRequestTitle"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@color/md_grey_200"
+    />
+
+
+    <ImageView
+    android:id="@+id/ivClock"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_clock"
+    app:layout_constraintTop_toBottomOf="@+id/div"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias=".25"
+    android:layout_marginTop="@dimen/dp_20"
+
+    />
+
+
+    <ImageView
+            android:id="@+id/ivEarnings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_earnings"
+            app:layout_constraintTop_toBottomOf="@+id/div"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".75"
+            android:layout_marginTop="@dimen/dp_20"
+    />
+
+
+    <TextView
+        android:id="@+id/tvPendingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ivClock"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".22"
+        android:text="15"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/md_black_1000"
+    />
+
+
+    <TextView
+            android:id="@+id/tvPendingTimeUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPendingTime"
+            app:layout_constraintStart_toEndOf="@+id/tvPendingTime"
+            android:layout_marginStart="@dimen/dp_4"
+            android:text="sec"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/md_black_1000"
+    />
+
+
+    <TextView
+            android:id="@+id/tvEarning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/ivClock"
+            android:layout_marginTop="@dimen/dp_10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".74"
+            android:text="15"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/md_black_1000"
+    />
+
+
+    <TextView
+            android:id="@+id/tvEarningUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tvEarning"
+            app:layout_constraintStart_toEndOf="@+id/tvEarning"
+            android:layout_marginStart="@dimen/dp_4"
+            android:text="sec"
+            android:visibility="gone"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/md_black_1000"
+    />
+
+
+
+
+    <View
+            android:id="@+id/div2"
+            android:layout_height="@dimen/dp_1"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEarningUnit"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@color/md_grey_200"
+    />
+
+
+    <TextView
+
+            android:id="@+id/tvPickUpAddress"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/div2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:maxLines="2"
+            android:textColor="@color/md_black_1000"
+            android:textSize="@dimen/sp_12"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginStart="@dimen/dp_4"
+            android:layout_marginEnd="@dimen/dp_4"
+
+    />
+
+
+    <ImageView
+        android:id="@+id/ivPickUpStaticMap"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_100"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/dp_4"
+        app:layout_constraintTop_toBottomOf="@+id/tvPickUpAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+    />
+
+
+    <Button
+            android:id="@+id/btnReject"
+            android:layout_width="@dimen/dp_0"
+            app:layout_constraintWidth_percent=".5"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/ivPickUpStaticMap"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/md_red_500"
+            android:text="@string/reject"
+            android:textColor="@color/md_white_1000"
+            android:textStyle="bold"
+
+    />
+
+    <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="@dimen/dp_0"
+            app:layout_constraintWidth_percent=".5"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/ivPickUpStaticMap"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/md_green_400"
+            android:text="@string/accept"
+            android:textColor="@color/md_white_1000"
+            android:textStyle="bold"
+
+    />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

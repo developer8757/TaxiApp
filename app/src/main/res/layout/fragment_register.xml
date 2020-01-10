@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layer_list_initial">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="?actionBarSize"
+                android:text="@string/create_a_new_account"
+                android:textColor="@color/colorMustard"
+                android:textSize="@dimen/sp_20"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/glTop"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_0"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".5"
+
+                />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tiFirstName"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:hint="@string/firstname"
+                android:theme="@style/InputDarkStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/glTop"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias=".20"
+                app:layout_constraintWidth_percent=".45"
+
+
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etFirstName"
+                    style="@style/InputStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:lines="1"
+                    android:maxLength="24" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tiLastName"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:hint="@string/lastname"
+                android:theme="@style/InputDarkStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@+id/glTop"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias=".20"
+                app:layout_constraintWidth_percent=".45"
+
+
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etLastName"
+                    style="@style/InputStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:lines="1"
+                    android:maxLength="24" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tiEmail"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:hint="@string/email"
+                android:theme="@style/InputDarkStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tiFirstName"
+                app:layout_constraintWidth_percent=".90"
+
+
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etEmail"
+                    style="@style/InputStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:lines="1" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/clPhone"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tiEmail"
+                app:layout_constraintWidth_percent=".90">
+
+
+                <com.rilixtech.CountryCodePicker
+                    android:id="@+id/countryCodePicker"
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tiPhone"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/InputDarkStyle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/countryCodePicker"
+                    app:layout_constraintTop_toTopOf="parent"
+
+
+                    >
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/etPhone"
+                        style="@style/InputStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/phone"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLength="15"
+
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tiPassword"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:hint="@string/password_length_6_to_8_must_be_alpha_numeric"
+                android:theme="@style/InputDarkStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clPhone"
+                app:layout_constraintWidth_percent=".90"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/md_white_1000"
+
+
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etPassword"
+                    style="@style/InputStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:maxLength="8"
+                    android:paddingBottom="@dimen/dp_10" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/cbTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:button="@drawable/dr_mustard_chk_bx"
+
+                app:layout_constraintStart_toStartOf="@+id/tiPassword"
+                app:layout_constraintTop_toBottomOf="@+id/tiPassword"
+
+                />
+
+            <TextView
+                android:id="@+id/tvTermsConditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:text="@string/t_c"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="italic"
+                app:layout_constraintStart_toEndOf="@+id/cbTerms"
+                app:layout_constraintTop_toTopOf="@+id/cbTerms" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                style="@style/ButtonRoundedBlueStyle"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:inputType="textCapWords"
+                android:text="@string/signup"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTermsConditions"
+                app:layout_constraintWidth_percent=".8"
+
+                />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

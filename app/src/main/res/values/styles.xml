@@ -1,0 +1,86 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="otpViewStyle">@style/OtpWidget.OtpView</item>
+
+    </style>
+
+
+    <style name="InputStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColorHint">@color/md_white_1000</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:backgroundTint">@color/md_white_1000</item>
+
+
+    </style>
+
+
+    <style name="InputStyleDark" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColorHint">@color/md_black_1000</item>
+        <item name="android:textColor">@color/md_black_1000</item>
+        <item name="android:backgroundTint">@color/md_grey_500</item>
+
+
+    </style>
+
+
+    <style name="ButtonRoundedBlueStyle" parent="Widget.AppCompat.Button">
+
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:background">@drawable/shape_rounded_cornors</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:padding">@dimen/dp_10</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="InputLightStyle" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/md_grey_500</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/colorMustard</item>
+        <item name="colorControlNormal">@color/md_grey_500</item>
+        <item name="colorControlActivated">@color/colorMustard</item>
+    </style>
+
+
+    <style name="InputDarkStyle" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/md_grey_100</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/colorMustard</item>
+        <item name="colorControlNormal">@color/md_grey_500</item>
+        <item name="colorControlActivated">@color/colorMustard</item>
+    </style>
+
+
+    <style name="CardWidgetStyle" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:textColorHint">@color/grey_shade3</item>
+        <item name="editTextStyle">@style/EditTextOverride</item>
+        <item name="android:editTextStyle">@style/EditTextOverride</item>
+    </style>
+
+    <style name="EditTextOverride" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/stripe_custom_design</item>
+        <item name="android:padding">@dimen/dp_20</item>
+        <item name="android:textColorHint">@color/grey_shade3</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHighlight">@color/white</item>
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/anim_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_exit</item>
+    </style>
+
+
+</resources>

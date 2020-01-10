@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_rider_profile"
+        android:icon="@drawable/ic_menu_profile"
+        android:title="@string/profile" />
+
+    <item
+        android:id="@+id/nav_rider_trips"
+        android:icon="@drawable/ic_menu_trips"
+        android:title="@string/your_trips" />
+
+    <item
+        android:id="@+id/nav_rider_payments"
+        android:icon="@drawable/ic_menu_payment"
+        android:title="@string/payments" />
+
+    <item
+        android:id="@+id/nav_rider_change_password"
+        android:icon="@drawable/ic_rider_change_password"
+        android:title="@string/change_password" />
+
+
+    <item
+        android:id="@+id/nav_rider_information"
+        android:icon="@drawable/ic_menu_information"
+        android:title="@string/help" />
+
+    <item
+        android:id="@+id/nav_rider_logout"
+        android:icon="@drawable/ic_rider_logout"
+        android:title="@string/log_out" />
+</menu>

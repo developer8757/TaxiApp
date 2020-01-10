@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <include
+            layout="@layout/tool_bar_generic"
+    />
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0"
+            android:layout_marginTop="?actionBarSize"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
+    >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/clImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/md_grey_100"
+    >
+
+
+        <ImageButton
+                android:id="@+id/ibDriverImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_margin="@dimen/dp_20"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/dr_driver_place_holder"
+                android:background="@android:color/transparent"
+
+        />
+
+
+        <TextView
+                android:id="@+id/tvTakePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibDriverImage"
+                android:layout_marginTop="@dimen/dp_10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/take_a_photo_of_license"
+                android:textColor="@color/md_blue_grey_300"
+                android:layout_marginBottom="@dimen/dp_10"
+
+        />
+
+        <ImageView
+
+                android:id="@+id/ivLicense"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="@dimen/dp_0"
+                android:layout_marginBottom="@dimen/dp_0"
+                android:scaleType="fitXY"
+        />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/tiLicenseNumber"
+            app:layout_constraintTop_toBottomOf="@+id/clImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent=".8"
+            android:hint="@string/license_number"
+            android:textColorHint="@color/md_grey_500"
+            android:layout_marginTop="@dimen/dp_20"
+
+    >
+    <android.support.design.widget.TextInputEditText
+            android:id="@+id/etLicenseNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters"
+            style="@style/InputStyleDark"
+            android:maxLength="20"
+
+    />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/tiIssuedOn"
+            app:layout_constraintTop_toBottomOf="@+id/tiLicenseNumber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent=".8"
+            android:hint="@string/issued_on"
+            android:textColorHint="@color/md_grey_500"
+            android:layout_marginTop="@dimen/dp_20"
+
+    >
+        <android.support.design.widget.TextInputEditText
+                android:id="@+id/etIssuedOn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                style="@style/InputStyleDark"
+                android:maxLength="20"
+                android:focusable="false"
+
+        />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/tiExpiredOn"
+            app:layout_constraintTop_toBottomOf="@+id/tiIssuedOn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent=".8"
+            android:hint="@string/expiry_date"
+            android:textColorHint="@color/md_grey_500"
+            android:layout_marginTop="@dimen/dp_20"
+
+    >
+        <android.support.design.widget.TextInputEditText
+                android:id="@+id/etExpiredOn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                style="@style/InputStyleDark"
+                android:maxLength="20"
+                android:focusable="false"
+
+        />
+
+    </android.support.design.widget.TextInputLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/md_white_1000"
+        android:text="@string/submit"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+
+    />
+
+
+</android.support.constraint.ConstraintLayout>

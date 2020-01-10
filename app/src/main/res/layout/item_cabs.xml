@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="wrap_content"
+                                             android:layout_height="100dp"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:paddingTop="@dimen/dp_6"
+                                             android:paddingBottom="@dimen/dp_6"
+                                             android:paddingStart="@dimen/dp_10"
+                                             android:paddingEnd="@dimen/dp_10"
+>
+
+
+    <ImageView
+            android:id="@+id/ivCab"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
+
+    <TextView
+        android:id="@+id/tvCabType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCab"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCab"
+        android:textSize="@dimen/sp_10"
+        android:background="@drawable/shape_grey_cab_name"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_6"
+        android:paddingEnd="@dimen/dp_6"
+        android:paddingTop="@dimen/dp_2"
+        android:paddingBottom="@dimen/dp_2"
+        android:textColor="@color/md_white_1000"
+    />
+
+    <TextView
+        android:id="@+id/tvFarePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvCabType"
+        app:layout_constraintStart_toStartOf="@+id/ivCab"
+        app:layout_constraintEnd_toEndOf="@+id/ivCab"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/md_grey_800"
+        android:layout_marginTop="@dimen/dp_4"
+        android:text="$12"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+    />
+
+
+</android.support.constraint.ConstraintLayout>

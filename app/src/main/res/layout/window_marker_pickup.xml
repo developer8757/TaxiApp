@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="wrap_content"
+                                             android:layout_height="wrap_content"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/clEta"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_32"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/md_black_1000"
+    >
+
+        <TextView
+            android:id="@+id/tvEta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:gravity="center"
+
+            android:textColor="@color/md_white_1000"
+        />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvPickUp"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_0"
+        app:layout_constraintTop_toTopOf="@+id/clEta"
+        app:layout_constraintBottom_toBottomOf="@+id/clEta"
+        app:layout_constraintStart_toEndOf="@+id/clEta"
+        android:background="@color/md_white_1000"
+        android:lines="2"
+        android:maxLines="2"
+        android:gravity="center"
+        android:textColor="@color/md_black_1000"
+        android:textSize="@dimen/sp_10"
+        android:text="Yapapp India Pvt ltd"
+
+    />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvPickUp"
+        app:layout_constraintEnd_toEndOf="@+id/tvPickUp"
+        app:layout_constraintStart_toStartOf="@+id/clEta"
+        android:src="@drawable/ic_pin"
+    />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

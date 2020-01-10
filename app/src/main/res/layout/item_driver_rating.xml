@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:paddingTop="@dimen/dp_10"
+>
+
+    <ImageView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:id="@+id/ivRiderPic"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/dp_16"
+            android:background="@drawable/bg_profile_image"
+            android:padding="@dimen/dp_1"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_person_outline_black_24dp"
+    />
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvRiderName"
+            android:textStyle="bold"
+            android:textColor="@color/md_black_1000"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintTop_toTopOf="@+id/ivRiderPic"
+            app:layout_constraintStart_toEndOf="@+id/ivRiderPic"
+            android:layout_marginStart="@dimen/dp_16"/>
+
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/ratingRiderDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:mrb_progressTint="@color/colorMustard"
+            android:rating="3"
+            style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small"
+            android:layout_marginTop="@dimen/dp_8"
+            android:maxHeight="@dimen/dp_30"
+            android:stepSize="1"
+            app:layout_constraintTop_toBottomOf="@+id/tvRiderName"
+            app:layout_constraintBottom_toBottomOf="@+id/ivRiderPic"
+            app:layout_constraintStart_toEndOf="@+id/ivRiderPic"
+            android:layout_marginStart="@dimen/dp_16"/>
+
+    <TextView
+            android:text="@string/expiry_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDate"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:drawablePadding="@dimen/dp_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/md_grey_500"
+            android:drawableStart="@drawable/forma_1_copy_15"/>
+
+    <TextView
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvComment"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            app:layout_constraintTop_toBottomOf="@+id/ivRiderPic"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/dp_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:textColor="@color/md_grey_500"
+            android:maxLines="3"
+            app:layout_constraintBottom_toTopOf="@+id/view2"/>
+    <View
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_1"
+            android:id="@+id/view2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/md_grey_300"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

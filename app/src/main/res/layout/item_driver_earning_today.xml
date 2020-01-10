@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:layout_marginStart="@dimen/dp_14"
+                                             android:layout_marginTop="@dimen/dp_14"
+                                             android:layout_marginEnd="@dimen/dp_14"
+
+                                             android:background="@drawable/shape_rounded_cornors_white">
+
+    <ImageView
+        android:id="@+id/imvEarningDriver"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_margin="@dimen/dp_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvEarningDriverName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginEnd="8dp"
+        android:text="Jessica Fox"
+        android:textColor="@color/md_grey_A400"
+        android:textSize="@dimen/dp_14"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvDriverEarning"
+        app:layout_constraintStart_toEndOf="@+id/imvEarningDriver"
+        app:layout_constraintTop_toTopOf="@+id/imvEarningDriver"/>
+
+    <TextView
+        android:id="@+id/tvDriverEarningTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:drawableLeft="@drawable/forma_1_copy_15"
+        android:drawablePadding="5dip"
+        android:text="TextView"
+        android:textColor="@color/md_grey_A200"
+        android:textSize="@dimen/dp_14"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imvEarningDriver"
+        app:layout_constraintStart_toEndOf="@+id/imvEarningDriver"/>
+
+    <TextView
+        android:id="@+id/tvDriverEarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:text="Jessica Fox"
+        android:textColor="@color/md_grey_A500"
+        android:textSize="@dimen/dp_14"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imvEarningDriver"/>
+
+    <TextView
+        android:id="@+id/tvCustomerPaymentMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:text="TextView"
+        android:textColor="@color/md_grey_A300"
+        android:textSize="@dimen/dp_14"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imvEarningDriver"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

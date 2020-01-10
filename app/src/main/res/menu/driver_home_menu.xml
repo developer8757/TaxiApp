@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_home"
+          android:icon="@drawable/ic_bottom_nav_home"
+          app:showAsAction="ifRoom"
+          android:title="@string/home_nav_bottom"
+    />
+
+    <item android:id="@+id/action_earnings"
+          android:icon="@drawable/ic_bottom_nav_earning"
+          app:showAsAction="ifRoom"
+          android:title="@string/home_nav_earnings"
+    />
+
+    <item android:id="@+id/action_rating"
+          android:icon="@drawable/ic_bottom_nav_ratings_"
+          app:showAsAction="ifRoom"
+          android:title="@string/home_nav_ratings"
+    />
+
+    <item android:id="@+id/action_account"
+          android:icon="@drawable/ic_bottom_nav_profile"
+          app:showAsAction="ifRoom"
+          android:title="@string/home_nav_account"
+    />
+
+</menu>

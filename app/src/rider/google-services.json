@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1047265283323",
+    "firebase_url": "https://rontaxi-9e391.firebaseio.com",
+    "project_id": "rontaxi-9e391",
+    "storage_bucket": "rontaxi-9e391.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047265283323:android:8991237020d07658",
+        "android_client_info": {
+          "package_name": "com.rontaxi.rider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047265283323-d0fq74e48n7givtdjns5412qf5cirvjc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzWYEyP4wJdJzH-CZDMiOYoiIDbIyvNyA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047265283323-d0fq74e48n7givtdjns5412qf5cirvjc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

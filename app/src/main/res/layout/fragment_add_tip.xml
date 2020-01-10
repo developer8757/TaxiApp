@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_map_blur">
+
+    <include layout="@layout/tool_bar_generic"/>
+
+
+    <ImageView
+        android:id="@+id/imgAddTip"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_0"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarGeneric"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        android:src="@drawable/add_tip"/>
+
+    <TextView
+        android:id="@+id/tvTipAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/enter_tip_amount"
+        android:textColor="@color/md_grey_900"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgAddTip"
+        app:layout_constraintBottom_toTopOf="@+id/etTipAmount"/>
+
+
+    <EditText
+        android:id="@+id/etTipAmount"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintBottom_toTopOf="@+id/btnPayAmount"
+        app:layout_constraintTop_toBottomOf="@+id/tvTipAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="number"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="@dimen/dp_20"
+        android:hint="@string/hint_tip_amount"
+        android:textAlignment="center"
+        android:background="@drawable/edittext_rounded_corners"/>
+
+    <Button
+        android:id="@+id/btnPayAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintTop_toBottomOf="@id/etTipAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dp_20"
+        style="@style/ButtonRoundedBlueStyle"
+        android:text="@string/pay_now"
+        android:textStyle="bold"/>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
